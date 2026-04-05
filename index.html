@@ -71,7 +71,7 @@
       "name": "How does the AI text to handwriting converter work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our tool uses realistic handwriting fonts to convert your typed text into natural-looking handwritten content. Simply type or paste your text, choose a handwriting style, and download the result as a PNG image."
+        "text": "Our tool uses realistic handwriting fonts to convert your typed text into natural-looking handwritten content. Simply type or paste your text, choose a handwriting style, and download."
       }
     },
     {
@@ -493,186 +493,184 @@
             gap: 24px;
         }
     }
-    
-.proof-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    overflow: hidden;
-    box-shadow: var(--shadow-lg);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.proof-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
-}
-.proof-card-label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 16px 20px;
-    font-weight: 700;
-    font-size: 0.9rem;
-    letter-spacing: 0.3px;
-}
-.proof-card-label .proof-tag {
-    font-size: 0.7rem;
-    font-weight: 700;
-    padding: 4px 12px;
-    border-radius: 20px;
-    letter-spacing: 0.5px;
-}
-.proof-card-before .proof-card-label {
-    background: #fef2f2;
-    color: #dc2626;
-    border-bottom: 2px solid #fecaca;
-}
-.proof-card-before .proof-tag {
-    background: #fee2e2;
-    color: #dc2626;
-}
-.proof-card-after .proof-card-label {
-    background: #ecfdf5;
-    color: #059669;
-    border-bottom: 2px solid #a7f3d0;
-}
-.proof-card-after .proof-tag {
-    background: #d1fae5;
-    color: #059669;
-}
-.proof-card-image {
-    position: relative;
-    width: 100%;
-    background: #f9fafb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-.proof-card-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-}
-/* Placeholder shown when no image is set yet */
-.proof-placeholder {
-    width: 100%;
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-    color: var(--text-lighter);
-    font-size: 0.85rem;
-    text-align: center;
-    padding: 40px 24px;
-}
-.proof-placeholder-icon {
-    font-size: 3rem;
-    opacity: 0.5;
-}
-.proof-placeholder-text {
-    font-weight: 600;
-    color: var(--text-light);
-}
-.proof-placeholder-hint {
-    font-size: 0.75rem;
-    color: var(--text-lighter);
-    max-width: 200px;
-}
-.proof-card-caption {
-    padding: 14px 20px;
-    font-size: 0.8rem;
-    color: var(--text-light);
-    background: #f8fafc;
-    border-top: 1px solid var(--border);
-    text-align: center;
-    line-height: 1.5;
-}
-.proof-card-caption strong {
-    color: var(--text);
-}
-.proof-arrow {
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
-@media (min-width: 701px) {
-    .proof-arrow {
+    .proof-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow-lg);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .proof-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    }
+    .proof-card-label {
         display: flex;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 10;
+        align-items: center;
+        gap: 10px;
+        padding: 16px 20px;
+        font-weight: 700;
+        font-size: 0.9rem;
+        letter-spacing: 0.3px;
     }
-}
-.proof-arrow-circle {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    background: var(--primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 20px rgba(13,148,136,0.35);
-    animation: arrowPulse 2s ease-in-out infinite;
-}
-@keyframes arrowPulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.08); }
-}
-.proof-arrow-circle svg {
-    width: 24px;
-    height: 24px;
-}
-.proof-stats {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    margin-top: 40px;
-    flex-wrap: wrap;
-}
-.proof-stat {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 14px 22px;
-    box-shadow: var(--shadow);
-}
-.proof-stat-number {
-    font-size: 1.3rem;
-}
-.proof-stat-label {
-    font-size: 0.85rem;
-    color: var(--text-light);
-    font-weight: 500;
-}
-@media (max-width: 600px) {
-    .proof-stats {
-        gap: 12px;
+    .proof-card-label .proof-tag {
+        font-size: 0.7rem;
+        font-weight: 700;
+        padding: 4px 12px;
+        border-radius: 20px;
+        letter-spacing: 0.5px;
     }
-    .proof-stat {
-        padding: 10px 16px;
-        flex: 1 1 100%;
+    .proof-card-before .proof-card-label {
+        background: #fef2f2;
+        color: #dc2626;
+        border-bottom: 2px solid #fecaca;
+    }
+    .proof-card-before .proof-tag {
+        background: #fee2e2;
+        color: #dc2626;
+    }
+    .proof-card-after .proof-card-label {
+        background: #ecfdf5;
+        color: #059669;
+        border-bottom: 2px solid #a7f3d0;
+    }
+    .proof-card-after .proof-tag {
+        background: #d1fae5;
+        color: #059669;
+    }
+    .proof-card-image {
+        position: relative;
+        width: 100%;
+        background: #f9fafb;
+        display: flex;
+        align-items: center;
         justify-content: center;
+        overflow: hidden;
+    }
+    .proof-card-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
     }
     .proof-placeholder {
-        min-height: 300px;
+        width: 100%;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        color: var(--text-lighter);
+        font-size: 0.85rem;
+        text-align: center;
+        padding: 40px 24px;
     }
-}
+    .proof-placeholder-icon {
+        font-size: 3rem;
+        opacity: 0.5;
+    }
+    .proof-placeholder-text {
+        font-weight: 600;
+        color: var(--text-light);
+    }
+    .proof-placeholder-hint {
+        font-size: 0.75rem;
+        color: var(--text-lighter);
+        max-width: 200px;
+    }
+    .proof-card-caption {
+        padding: 14px 20px;
+        font-size: 0.8rem;
+        color: var(--text-light);
+        background: #f8fafc;
+        border-top: 1px solid var(--border);
+        text-align: center;
+        line-height: 1.5;
+    }
+    .proof-card-caption strong {
+        color: var(--text);
+    }
+    .proof-arrow {
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (min-width: 701px) {
+        .proof-arrow {
+            display: flex;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+        }
+    }
+    .proof-arrow-circle {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 20px rgba(13,148,136,0.35);
+        animation: arrowPulse 2s ease-in-out infinite;
+    }
+    @keyframes arrowPulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.08); }
+    }
+    .proof-arrow-circle svg {
+        width: 24px;
+        height: 24px;
+    }
+    .proof-stats {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    .proof-stat {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 14px 22px;
+        box-shadow: var(--shadow);
+    }
+    .proof-stat-number {
+        font-size: 1.3rem;
+    }
+    .proof-stat-label {
+        font-size: 0.85rem;
+        color: var(--text-light);
+        font-weight: 500;
+    }
+    @media (max-width: 600px) {
+        .proof-stats {
+            gap: 12px;
+        }
+        .proof-stat {
+            padding: 10px 16px;
+            flex: 1 1 100%;
+            justify-content: center;
+        }
+        .proof-placeholder {
+            min-height: 300px;
+        }
+    }
 
-/* Scrollbar */
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: #f1f5f9; }
-::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
 </style>
 </head>
 <body>
@@ -703,7 +701,6 @@
             <a href="#apps">Apps</a>
             <a href="#faq">FAQ</a>
 
-            <!-- 🔥 ADD THESE -->
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
             <a href="privacy.html">Privacy</a>
@@ -713,8 +710,378 @@
     </div>
 </nav>
 
-<!-- Continue with rest of HTML body sections... (file is very large, see repository for complete content) -->
+<!-- HERO -->
+<header class="section hero" id="home">
+    <div class="badge">✨ 100% Free — No Login Required</div>
+    <h1>Free AI <em>Text to Handwriting</em> Converter</h1>
+    <p>Convert typed text into realistic handwritten notes and assignments instantly. Supports multiple handwriting styles and Indian languages.</p>
+    <a href="#tool" class="hero-cta">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        Start Converting
+    </a>
+    <div class="hero-badges">
+        <span>✅ Free Forever</span>
+        <span>✅ No Login</span>
+        <span>✅ Download PNG</span>
+        <span>✅ 5 Languages</span>
+        <span>✅ Assignment Ready</span>
+    </div>
+</header>
+
+<!-- TOOL SECTION -->
+<section class="section" id="tool">
+    <div class="section-header fade-up">
+        <div class="badge">CONVERTER TOOL</div>
+        <h2>Text to Handwriting Generator</h2>
+        <p>Type your text, choose a style, and create realistic handwriting in seconds. Upload your own paper for assignments.</p>
+    </div>
+    <div class="tool-wrapper fade-up">
+        <div class="tool-grid">
+            <div class="tool-controls">
+                <div class="control-group">
+                    <label for="bg-upload">📄 Upload Paper / Background</label>
+                    <input type="file" id="bg-upload" accept="image/*">
+                </div>
+                <div class="control-group">
+                    <label for="text-input">✏️ Your Text</label>
+                    <textarea id="text-input" rows="5" placeholder="Type or paste your text here...">The quick brown fox jumps over the lazy dog. This is a sample of realistic handwriting generated online for free.</textarea>
+                </div>
+                <div class="control-group">
+                    <label for="font-select">🖋️ Handwriting Style</label>
+                    <select id="font-select">
+                        <option value="Kalam">Kalam (Natural)</option>
+                        <option value="Caveat">Caveat (Casual)</option>
+                        <option value="Gloria Hallelujah">Gloria Hallelujah (Fun)</option>
+                        <option value="Gochi Hand">Gochi Hand (Bold)</option>
+                        <option value="Patrick Hand">Patrick Hand (Clean)</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="color-picker">🎨 Ink Color</label>
+                    <input type="color" id="color-picker" value="#1a1a6e">
+                </div>
+                <div class="control-group">
+                    <label>📏 Font Size</label>
+                    <div class="range-row">
+                        <input type="range" id="font-size-slider" min="12" max="48" step="1" value="22">
+                        <span class="range-val" id="font-size-val">22px</span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label>📐 Line Spacing</label>
+                    <div class="range-row">
+                        <input type="range" id="line-spacing" min="0.8" max="3" step="0.1" value="1.5">
+                        <span class="range-val" id="line-spacing-val">1.5</span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label>🔄 Rotate Text</label>
+                    <div class="range-row">
+                        <input type="range" id="rotation-slider" min="-15" max="15" step="0.5" value="0">
+                        <span class="range-val" id="rotation-val">0°</span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label>📝 Letter Spacing</label>
+                    <div class="range-row">
+                        <input type="range" id="letter-spacing-slider" min="-2" max="5" step="0.5" value="0">
+                        <span class="range-val" id="letter-spacing-val">0px</span>
+                    </div>
+                </div>
+                <button class="btn-primary" id="download-btn">���� Download as PNG</button>
+                <button class="btn-secondary" id="reset-btn">🔄 Reset All</button>
+            </div>
+            <div class="tool-preview">
+                <div id="canvas-container">
+                    <div class="default-paper" id="default-paper"></div>
+                    <img id="bg-img" src="" alt="Paper background" style="display:none;">
+                    <div id="text-layer">The quick brown fox jumps over the lazy dog. This is a sample of realistic handwriting generated online for free.</div>
+                </div>
+                <p class="preview-hint">🖱️ Drag text to reposition • Scroll to resize • Adjust controls on the left</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section section-alt" id="features">
+    <div class="section-header fade-up">
+        <div class="badge">WHY CHOOSE US</div>
+        <h2>Powerful Features, Zero Cost</h2>
+        <p>Everything you need to create realistic handwriting from typed text, completely free.</p>
+    </div>
+    <div class="features-grid fade-up">
+        <div class="feature-card">
+            <div class="feature-icon">🤖</div>
+            <h3>AI-Powered Realism</h3>
+            <p>Our realistic handwriting generator uses carefully crafted fonts that mimic natural human handwriting patterns.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🌐</div>
+            <h3>5 Indian Languages</h3>
+            <p>Supports Hindi, Bengali, Tamil, Telugu, and Marathi alongside English for handwriting conversion.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📥</div>
+            <h3>Download as PNG</h3>
+            <p>Export your handwritten text as high-quality PNG images, ready for printing or digital submission.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🔓</div>
+            <h3>No Login Required</h3>
+            <p>Start converting text to handwriting immediately. No sign-up, no registration, no hassle.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>Mobile Responsive</h3>
+            <p>Works seamlessly on desktop, tablet, and mobile devices. Create handwriting on the go.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🎓</div>
+            <h3>Assignment Ready</h3>
+            <p>Upload lined paper backgrounds and create authentic-looking handwritten assignments for school or college.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ASSIGNMENTS SECTION -->
+<section class="section" id="assignments">
+    <div class="section-header fade-up">
+        <div class="badge">FOR STUDENTS</div>
+        <h2>Handwritten Assignment Maker</h2>
+        <p>Create realistic handwritten assignments, essays, and homework with our free assignment generator.</p>
+    </div>
+    <div class="two-col fade-up">
+        <div class="content-block">
+            <h3>How to Create Handwritten Assignments</h3>
+            <p>Our handwritten assignment maker helps students create authentic-looking assignments in minutes.</p>
+            <ul>
+                <li>Upload your assignment paper or use our built-in lined paper template</li>
+                <li>Type or paste your assignment content into the text editor</li>
+                <li>Choose a natural handwriting style that suits your needs</li>
+                <li>Adjust ink color, spacing, and text size for realism</li>
+                <li>Download the completed assignment as a PNG image</li>
+            </ul>
+        </div>
+        <div class="content-block">
+            <h3>Perfect for Students</h3>
+            <p>Create professional assignment front pages with handwritten text.</p>
+            <ul>
+                <li>Works with any paper template — ruled, grid, or blank</li>
+                <li>Multiple handwriting fonts for different assignment styles</li>
+                <li>Adjustable line spacing to match paper ruling</li>
+                <li>Rotate and position text precisely on the page</li>
+                <li>Perfect for handwritten assignment submissions</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="section section-alt" id="faq">
+    <div class="section-header fade-up">
+        <div class="badge">QUESTIONS?</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about our AI text to handwriting converter.</p>
+    </div>
+    <div class="faq-list fade-up">
+        <div class="faq-item">
+            <div class="faq-q">
+                <span>How does the text to handwriting converter work?</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="faq-a">
+                <p>Our AI-powered tool analyzes handwriting patterns and converts your typed text into natural-looking handwritten content. Simply input your text, select a style, and download the result as a PNG image.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">
+                <span>Is this completely free?</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="faq-a">
+                <p>Yes! Our handwriting generator is 100% free. No registration, no login required, and unlimited conversions. You can use it as much as you want without any charges.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">
+                <span>Can I use this for school assignments?</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="faq-a">
+                <p>Yes! Our tool is perfect for creating authentic-looking handwritten assignments. Upload your assignment paper, add your text, customize the style, and download. It looks like real handwriting!</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">
+                <span>What languages are supported?</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="faq-a">
+                <p>We support English and 5 Indian languages including Hindi, Bengali, Tamil, Telugu, and Marathi. More languages coming soon!</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">
+                <span>Can I download the handwritten text?</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="faq-a">
+                <p>Absolutely! You can download your handwritten creations as high-quality PNG images. Perfect for printing, emailing, or digital submission.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">
+                <span>Is my data safe?</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="faq-a">
+                <p>Yes. We don't store any of your data. Everything is processed in your browser. Your text and images are never saved on our servers.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <h3>TextToNotes</h3>
+            <p>Free AI text to handwriting converter for students. Create realistic handwritten notes, assignments, and PDFs instantly.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Product</h4>
+            <a href="#tool">Converter</a>
+            <a href="#features">Features</a>
+            <a href="#assignments">Assignments</a>
+            <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        <div class="footer-col">
+            <h4>Resources</h4>
+            <a href="blog.html">Blog</a>
+            <a href="tutorials.html">Tutorials</a>
+            <a href="help.html">Help Center</a>
+            <a href="feedback.html">Send Feedback</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 TextToNotes - Free AI Text to Handwriting Converter. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    // Navigation scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        navLinks.classList.toggle('open');
+    });
+
+    // Scroll progress
+    const scrollProgress = document.getElementById('scroll-progress');
+    window.addEventListener('scroll', () => {
+        const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrolled = (window.scrollY / scrollHeight) * 100;
+        scrollProgress.style.width = scrolled + '%';
+    });
+
+    // Fade up animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // FAQ toggles
+    document.querySelectorAll('.faq-q').forEach(item => {
+        item.addEventListener('click', () => {
+            item.parentElement.classList.toggle('open');
+        });
+    });
+
+    // Range sliders
+    document.getElementById('font-size-slider').addEventListener('input', e => {
+        document.getElementById('font-size-val').textContent = e.target.value + 'px';
+        document.getElementById('text-layer').style.fontSize = e.target.value + 'px';
+    });
+
+    document.getElementById('line-spacing').addEventListener('input', e => {
+        document.getElementById('line-spacing-val').textContent = e.target.value;
+        document.getElementById('text-layer').style.lineHeight = e.target.value;
+    });
+
+    document.getElementById('rotation-slider').addEventListener('input', e => {
+        document.getElementById('rotation-val').textContent = e.target.value + '°';
+        document.getElementById('text-layer').style.transform = 'rotate(' + e.target.value + 'deg)';
+    });
+
+    document.getElementById('letter-spacing-slider').addEventListener('input', e => {
+        document.getElementById('letter-spacing-val').textContent = e.target.value + 'px';
+        document.getElementById('text-layer').style.letterSpacing = e.target.value + 'px';
+    });
+
+    document.getElementById('font-select').addEventListener('change', e => {
+        document.getElementById('text-layer').style.fontFamily = e.target.value + ', cursive';
+    });
+
+    document.getElementById('color-picker').addEventListener('input', e => {
+        document.getElementById('text-layer').style.color = e.target.value;
+    });
+
+    document.getElementById('text-input').addEventListener('input', e => {
+        document.getElementById('text-layer').textContent = e.target.value;
+    });
+
+    document.getElementById('bg-upload').addEventListener('change', e => {
+        const file = e.target.files[0];
+        const reader = new FileReader();
+        reader.onload = event => {
+            document.getElementById('bg-img').src = event.target.result;
+            document.getElementById('bg-img').style.display = 'block';
+            document.getElementById('default-paper').style.display = 'none';
+        };
+        reader.readAsDataURL(file);
+    });
+
+    document.getElementById('download-btn').addEventListener('click', () => {
+        const container = document.getElementById('canvas-container');
+        html2canvas(container).then(canvas => {
+            const link = document.createElement('a');
+            link.href = canvas.toDataURL();
+            link.download = 'handwriting.png';
+            link.click();
+        });
+    });
+
+    document.getElementById('reset-btn').addEventListener('click', () => {
+        location.reload();
+    });
+</script>
 
 </body>
 </html>
-  
