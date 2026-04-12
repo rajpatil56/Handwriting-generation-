@@ -6,16 +6,11 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About TextToNotes - Convert text into structured notes effortlessly. Save time and organize your ideas with our innovative tool.">
-    <title>About Us | TextToNotes - Text to Structured Notes Converter</title>
+    <meta name="description" content="The story behind TextToNotes. Created by Raj Patil to help students convert text to handwriting on custom college paper templates.">
+    <title>About Us | TextToNotes - Our Story & Mission</title>
     <link rel="canonical" href="https://www.texttonotes.site/about.html" />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -32,7 +27,6 @@
             z-index: 1000;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-
         nav .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -41,63 +35,43 @@
             justify-content: space-between;
             align-items: center;
         }
-
         nav .logo {
             font-size: 1.8rem;
             font-weight: bold;
             color: #3498db;
             text-decoration: none;
         }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-        }
-
+        nav ul { list-style: none; display: flex; gap: 2rem; }
         nav a {
             color: #ecf0f1;
             text-decoration: none;
             transition: color 0.3s;
             font-size: 0.95rem;
         }
+        nav a:hover { color: #3498db; }
 
-        nav a:hover {
-            color: #3498db;
+        /* Content Sections */
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        main { min-height: calc(100vh - 200px); padding: 3rem 0; }
+        
+        h1 { color: #2c3e50; margin-bottom: 1.5rem; font-size: 2.5rem; text-align: center; }
+        h2 { 
+            color: #2c3e50; 
+            margin-top: 2.5rem; 
+            margin-bottom: 1rem; 
+            font-size: 1.8rem; 
+            border-bottom: 3px solid #3498db; 
+            padding-bottom: 0.5rem; 
         }
+        p { margin-bottom: 1.2rem; line-height: 1.8; font-size: 1.05rem; color: #444; }
 
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Main Content */
-        main {
-            min-height: calc(100vh - 200px);
-            padding: 3rem 0;
-        }
-
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 2rem;
-            font-size: 2.5rem;
-        }
-
-        h2 {
-            color: #2c3e50;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            font-size: 1.8rem;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 0.5rem;
-        }
-
-        p {
-            margin-bottom: 1rem;
-            line-height: 1.8;
-            font-size: 1.05rem;
+        .story-highlight {
+            background: #fff;
+            border-left: 5px solid #3498db;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 0 8px 8px 0;
         }
 
         .mission-box {
@@ -106,234 +80,110 @@
             padding: 2rem;
             border-radius: 8px;
             margin: 2rem 0;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
         }
-
-        .mission-box h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
+        .mission-box h3 { font-size: 1.6rem; margin-bottom: 0.5rem; color: #fff; }
 
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
             margin: 2rem 0;
         }
-
         .feature-card {
             background: white;
             padding: 1.5rem;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-
-        .feature-card h3 {
-            color: #3498db;
-            margin-bottom: 0.5rem;
-            font-size: 1.3rem;
-        }
-
-        .feature-card p {
-            font-size: 0.95rem;
-        }
+        .feature-card h3 { color: #3498db; margin-bottom: 0.5rem; }
 
         /* Footer */
-        footer {
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            padding: 2rem 0;
-            margin-top: 3rem;
-        }
+        footer { background-color: #2c3e50; color: #ecf0f1; padding: 3rem 0; margin-top: 3rem; }
+        footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        footer .footer-links { display: flex; gap: 2rem; list-style: none; }
+        footer a { color: #3498db; text-decoration: none; }
 
-        footer .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-
-        footer p {
-            margin-bottom: 0;
-        }
-
-        footer .footer-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        footer a {
-            color: #3498db;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        footer a:hover {
-            color: #ecf0f1;
-        }
-
-        /* Responsive */
         @media (max-width: 768px) {
-            nav .container {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            nav ul {
-                gap: 1rem;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            nav a {
-                font-size: 0.85rem;
-            }
-
-            h1 {
-                font-size: 1.8rem;
-            }
-
-            h2 {
-                font-size: 1.4rem;
-            }
-
-            .features {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-
-            footer .container {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            footer .footer-links {
-                justify-content: center;
-                gap: 1rem;
-            }
-
-            main {
-                padding: 2rem 0;
-            }
-        }
-
-        strong {
-            color: #2c3e50;
+            nav .container { flex-direction: column; gap: 1rem; }
+            h1 { font-size: 2rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
+
     <nav>
         <div class="container">
-            <a href="https://www.texttonotes.site" class="logo">TextToNotes</a>
+            <a href="index.html" class="logo">TextToNotes</a>
             <ul>
-                <li><a href="https://www.texttonotes.site">Home</a></li>
-                <li><a href="https://www.texttonotes.site/about.html">About</a></li>
-                <li><a href="https://www.texttonotes.site/contact.html">Contact</a></li>
-                <li><a href="https://www.texttonotes.site/privacy.html">Privacy</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Main Content -->
     <main>
         <div class="container">
             <h1>About TextToNotes</h1>
 
-            <h2>Our Story</h2>
-            <p>TextToNotes was born from a simple idea: <strong>turn lengthy text into well-organized, easy-to-understand notes</strong>. We understand that students, professionals, and lifelong learners spend countless hours reading, researching, and taking notes manually. This process is time-consuming and often leaves important information scattered across different formats.</p>
+            <div class="story-highlight">
+                <h2>Our Story</h2>
+                <p>TextToNotes wasn't started in a boardroom; it was started in a hospital bed. My name is <strong>Raj Patil</strong>, and the idea for this platform came to me during a difficult medical emergency.</p>
+                
+                <p>While I was hospitalized, college assignments kept piling up. I tried using existing "text-to-handwriting" tools, but they all had the same flaw: they only offered generic paper backgrounds. My college required assignments to be submitted on our specific institutional stationery with specific margins and headers.</p>
 
-            <p>Our mission is to revolutionize how people capture and organize information by providing an intelligent, user-friendly tool that converts unstructured text into structured, actionable notes in seconds.</p>
-
-            <!-- Mission Box -->
-            <div class="mission-box">
-                <h3>🎯 Our Mission</h3>
-                <p><strong>"To empower students and professionals worldwide by transforming how they process and retain information through intelligent text-to-notes conversion."</strong></p>
+                <p>Unable to find a tool that allowed me to <strong>upload my own paper</strong> and maintain the authenticity required by my professors, I decided to build it myself. What started as a personal solution for a student in crisis has now grown into a tool used by thousands.</p>
             </div>
 
-            <h2>What We Do</h2>
-            <p>TextToNotes is an innovative online platform that:</p>
-            <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
-                <li><strong>Converts Text to Structured Notes:</strong> Simply paste or upload any text, and our tool automatically organizes it into clear, logical notes</li>
-                <li><strong>Saves Valuable Time:</strong> What would take hours of manual note-taking can be done in seconds</li>
-                <li><strong>Improves Information Retention:</strong> Well-organized notes make it easier to study, review, and remember key concepts</li>
-                <li><strong>Supports Multiple Formats:</strong> Export your notes in various formats for use with your favorite tools</li>
-            </ul>
+            <div class="mission-box">
+                <h3>🎯 Our Mission</h3>
+                <p>"To empower students and professionals by providing the most realistic, customizable text-to-handwriting conversion tool on the web."</p>
+            </div>
 
-            <h2>Why Choose TextToNotes?</h2>
+            <h2>Why We Are Different</h2>
+            <p>Most converters just change the font. We focus on the <strong>context</strong> of the writing. TextToNotes is designed to solve real academic and professional challenges:</p>
+            
             <div class="features">
                 <div class="feature-card">
-                    <h3>⚡ Lightning Fast</h3>
-                    <p>Convert lengthy texts into structured notes in seconds, not hours.</p>
+                    <h3>📄 Custom Paper Upload</h3>
+                    <p>The core feature that started it all. Upload your actual college or office paper to ensure 100% authenticity.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>🎓 Student-Focused</h3>
-                    <p>Designed specifically for students who need to study smarter, not harder.</p>
+                    <h3>✍️ Realistic AI Strokes</h3>
+                    <p>Our fonts are selected to mimic natural human pressure and spacing, moving away from "robotic" digital looks.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>🔒 100% Secure</h3>
-                    <p>Your data is private and secure. We never share your information with third parties.</p>
+                    <h3>🇮🇳 Multi-Language Support</h3>
+                    <p>Proudly supporting English and 5 Indian languages (Hindi, Bengali, Tamil, Telugu, Marathi) for diverse learners.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>📱 Mobile-Friendly</h3>
-                    <p>Access TextToNotes anywhere, anytime, on any device.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>✨ Easy to Use</h3>
-                    <p>No technical skills required. Simple, intuitive interface for everyone.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🎯 Smart Organization</h3>
-                    <p>Automatic categorization and structured formatting for better learning.</p>
+                    <h3>🔒 Privacy First</h3>
+                    <p>Your text and uploaded images stay in your browser. We don't store your sensitive assignment data on our servers.</p>
                 </div>
             </div>
 
             <h2>Who We Serve</h2>
-            <p>TextToNotes is perfect for:</p>
-            <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
-                <li><strong>Students:</strong> From high school to university, studying becomes more efficient</li>
-                <li><strong>Professionals:</strong> Quick note-taking for meetings, webinars, and research</li>
-                <li><strong>Researchers:</strong> Organize literature reviews and research materials easily</li>
-                <li><strong>Content Creators:</strong> Transform research into outlines for articles and videos</li>
-                <li><strong>Lifelong Learners:</strong> Keep track of knowledge from courses and readings</li>
-            </ul>
+            <p>Whether you are a student facing a medical situation like I did, a professional wanting to add a personal touch to a letter, or a researcher organizing notes, TextToNotes is built for you.</p>
 
-            <h2>Our Commitment</h2>
-            <p>We are committed to:</p>
-            <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
-                <li>Providing a <strong>free or affordable service</strong> accessible to everyone</li>
-                <li>Continuously improving our tool based on user feedback</li>
-                <li>Maintaining the highest standards of <strong>data privacy and security</strong></li>
-                <li>Supporting education and making learning tools more accessible globally</li>
-                <li>Building a community of students and learners who support each other</li>
-            </ul>
-
-            <h2>Get Started Today</h2>
-            <p>Ready to transform the way you take notes? Visit <a href="https://www.texttonotes.site" style="color: #3498db; text-decoration: none; font-weight: bold;">TextToNotes</a> and start converting text into structured notes right now. It's free, fast, and incredibly easy!</p>
-
-            <p style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #ddd;">Have questions? We'd love to hear from you! <a href="https://www.texttonotes.site/contact" style="color: #3498db; text-decoration: none; font-weight: bold;">Contact us</a> or reach out to our support team at <a href="mailto:support@texttonotes.site" style="color: #3498db; text-decoration: none; font-weight: bold;">support@texttonotes.site</a>.</p>
+            <p style="margin-top: 2rem; border-top: 1px solid #ddd; padding-top: 2rem;">
+                <strong>Questions or Feedback?</strong><br>
+                I am always looking to improve this tool for fellow students. Reach out via our <a href="contact.html" style="color: #3498db;">Contact Page</a> or email me at <a href="mailto:kutat5166@gmail.com" style="color: #3498db;">kutat5166@gmail.com</a>.
+            </p>
         </div>
     </main>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 TextToNotes. All rights reserved.</p>
+            <p>&copy; 2026 TextToNotes. Created by Raj Patil.</p>
             <ul class="footer-links">
-                <li><a href="https://www.texttonotes.site/privacy">Privacy Policy</a></li>
-                <li><a href="https://www.texttonotes.site/about">About Us</a></li>
-                <li><a href="https://www.texttonotes.site/contact">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </div>
     </footer>
+
 </body>
 </html>
