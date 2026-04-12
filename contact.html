@@ -8,42 +8,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="HVp4_wL0KKzQ8Fe2i9HU7KEZ6UhtrIVZXxgBmN1QbvA" />
     
-    <title>Contact Us | TextToNotes - Text to Structured Notes Converter</title>
-    <meta name="description" content="Get in touch with TextToNotes - Contact our support team at support@texttonotes.site for any questions or feedback.">
-    <meta name="keywords" content="text to handwriting, handwriting converter, ai handwriting generator, contact texttonotes">
-    <meta name="author" content="TextToHandwriting">
-    <meta name="robots" content="index, follow">
+    <title>Contact Us | TextToNotes - Get in Touch</title>
+    <meta name="description" content="Contact Raj Patil at TextToNotes for support, feedback, or inquiries regarding our text-to-handwriting tool.">
     
     <link rel="canonical" href="https://www.texttonotes.site/contact.html" />
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f8f9fa; }
+        
+        /* Navbar */
+        nav { background-color: #2c3e50; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { font-size: 1.8rem; font-weight: bold; color: #3498db; text-decoration: none; }
+        nav ul { list-style: none; display: flex; gap: 2rem; }
+        nav a { color: #ecf0f1; text-decoration: none; transition: color 0.3s; font-size: 0.95rem; }
+        nav a:hover { color: #3498db; }
+
+        /* Main Layout */
+        .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+        main { min-height: calc(100vh - 200px); padding: 3rem 0; }
+        
+        .contact-card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h1 { color: #2c3e50; margin-bottom: 1.5rem; text-align: center; }
+        p { margin-bottom: 1.5rem; text-align: center; color: #666; }
+
+        /* Form Styling */
+        form { display: flex; flex-direction: column; gap: 1.2rem; }
+        label { font-weight: bold; color: #2c3e50; margin-bottom: -0.8rem; }
+        input, textarea {
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            width: 100%;
+        }
+        textarea { min-height: 150px; resize: vertical; }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover { background-color: #2980b9; }
+
+        .direct-contact {
+            margin-top: 2rem;
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+        }
+        .direct-contact a { color: #3498db; font-weight: bold; text-decoration: none; }
+
+        /* Footer */
+        footer { background-color: #2c3e50; color: #ecf0f1; padding: 2rem 0; margin-top: 3rem; text-align: center; }
+        footer .footer-links { display: flex; gap: 2rem; list-style: none; justify-content: center; margin-top: 1rem; }
+        footer a { color: #3498db; text-decoration: none; }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">TextToNotes</a>
             <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="contact-card">
+            <h1>Contact Us</h1>
+            <p>Have a question or feedback? We'd love to hear from you.</p>
+            
+            <form action="mailto:kutat5166@gmail.com" method="POST" enctype="text/plain">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="direct-contact">
+                <p>You can also reach us directly at:</p>
+                <a href="mailto:kutat5166@gmail.com">kutat5166@gmail.com</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 TextToNotes. All rights reserved.</p>
+            <ul class="footer-links">
                 <li><a href="privacy.html">Privacy Policy</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Contact Us</h1>
-        <form action="/submit-contact" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send Message</button>
-        </form>
-    </main>
-    <footer>
-        <p>&copy; 2026 TextToNotes. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
