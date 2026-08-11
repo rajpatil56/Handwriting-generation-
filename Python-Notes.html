@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Python Handwritten Notes PDF | Python Notes for Beginners</title>
+  <meta name="description" content="Download Python handwritten notes PDF — clear, concise notes covering core Python concepts, practical examples, interview preparation, viva questions, and exam revision. Perfect for beginners and college students." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.texttonotes.site/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Python Handwritten Notes PDF | Python Notes for Beginners" />
+  <meta property="og:description" content="Download Python handwritten notes PDF covering core concepts, interview prep, viva questions, and exam revision. Free to download." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.texttonotes.site/" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Python Handwritten Notes",
+        "url": "https://www.texttonotes.site/",
+        "description": "Free Python handwritten notes PDF for beginners, college students, and interview preparation."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are Python handwritten notes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Python handwritten notes are manually written study notes that cover essential Python concepts in a clear, easy-to-understand format. They are designed to help students revise quickly and understand core ideas without getting lost in long textbooks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are these Python notes useful for beginners?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The notes are written in a beginner-friendly style, covering Python fundamentals step by step. No prior programming experience is required to follow them."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I download the Python handwritten notes PDF?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. You can download the complete Python handwritten notes PDF for free directly from this page using the Download button."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are these notes useful for Python interview preparation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The notes include important definitions, concepts, and practical understanding that are commonly tested in Python interviews and technical rounds."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are these notes useful for viva preparation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. The concise format of these handwritten notes makes them ideal for quick revision before a Python viva or practical exam."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are these Python notes useful for exam revision?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Because the notes are handwritten and organized by topic, they are easy to scan and revise quickly before an exam — much faster than reading a full textbook."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --blue:       #2563eb;
+      --blue-dark:  #1d4ed8;
+      --blue-light: #eff6ff;
+      --text:       #1e293b;
+      --muted:      #64748b;
+      --border:     #e2e8f0;
+      --bg:         #ffffff;
+      --bg-alt:     #f8fafc;
+      --radius:     10px;
+      --max-w:      860px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    img { max-width: 100%; display: block; }
+
+    /* ===== UTILITY ===== */
+    .container {
+      width: 100%;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    .section { padding: 4rem 0; }
+    .section-alt { background: var(--bg-alt); }
+
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.3;
+      margin-bottom: 1rem;
+    }
+
+    p { color: var(--muted); margin-bottom: 1rem; }
+    p:last-child { margin-bottom: 0; }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.8rem 1.6rem;
+      border-radius: var(--radius);
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.18s, box-shadow 0.18s, transform 0.12s;
+      border: none;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: var(--blue-dark);
+      box-shadow: 0 4px 14px rgba(37,99,235,0.3);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--blue);
+      border: 2px solid var(--blue);
+    }
+    .btn-outline:hover {
+      background: var(--blue-light);
+      transform: translateY(-1px);
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.75rem;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-shrink: 0;
+    }
+
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--blue);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    nav { display: flex; align-items: center; gap: 0.25rem; }
+
+    nav a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--muted);
+      padding: 0.4rem 0.65rem;
+      border-radius: 6px;
+      transition: color 0.15s, background 0.15s;
+    }
+
+    nav a:hover { color: var(--blue); background: var(--blue-light); }
+
+    /* hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+      border-radius: 6px;
+    }
+    .hamburger span {
+      display: block;
+      height: 2px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: all 0.25s;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      border-top: 1px solid var(--border);
+      padding: 0.75rem 1.25rem 1rem;
+      gap: 0.25rem;
+    }
+    .mobile-nav a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--muted);
+      padding: 0.55rem 0.5rem;
+      border-radius: 6px;
+    }
+    .mobile-nav a:hover { color: var(--blue); background: var(--blue-light); }
+    .mobile-nav.open { display: flex; }
+
+    /* ===== HERO ===== */
+    .hero {
+      padding: 5rem 0 4rem;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--blue-light);
+      color: var(--blue);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      margin-bottom: 1.25rem;
+      letter-spacing: 0.04em;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.2;
+      margin-bottom: 1.1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero h1 span { color: var(--blue); }
+
+    .hero p {
+      font-size: clamp(1rem, 2.5vw, 1.15rem);
+      max-width: 620px;
+      margin: 0 auto;
+      color: var(--muted);
+    }
+
+    .hero .btn-group { justify-content: center; }
+
+    /* notebook visual */
+    .notebook-visual {
+      margin: 3rem auto 0;
+      max-width: 480px;
+      background: #fff;
+      border: 2px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    .nb-header {
+      background: var(--blue);
+      padding: 0.85rem 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .nb-dot {
+      width: 11px; height: 11px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.4);
+    }
+    .nb-title {
+      color: rgba(255,255,255,0.9);
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-left: 0.25rem;
+    }
+
+    .nb-body {
+      padding: 1.25rem 1.5rem 1.5rem;
+      font-family: "Courier New", monospace;
+      font-size: 0.85rem;
+      color: var(--text);
+      line-height: 2;
+      background:
+        repeating-linear-gradient(
+          transparent,
+          transparent 31px,
+          #e2e8f0 31px,
+          #e2e8f0 32px
+        );
+    }
+
+    .nb-line { display: block; }
+    .nb-kw  { color: var(--blue); font-weight: 700; }
+    .nb-str { color: #16a34a; }
+    .nb-cm  { color: #94a3b8; }
+    .nb-fn  { color: #7c3aed; }
+
+    /* ===== WHY SECTION ===== */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+
+    .why-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.3rem 1.25rem;
+      transition: box-shadow 0.18s, border-color 0.18s;
+    }
+    .why-card:hover {
+      box-shadow: 0 4px 18px rgba(37,99,235,0.1);
+      border-color: #bfdbfe;
+    }
+
+    .why-icon {
+      font-size: 1.6rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .why-card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+      color: var(--text);
+    }
+
+    .why-card p {
+      font-size: 0.875rem;
+      margin: 0;
+    }
+
+    /* ===== WHAT YOU GET ===== */
+    .topics-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.75rem;
+      margin-top: 1.75rem;
+      list-style: none;
+    }
+
+    .topics-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      font-size: 0.9rem;
+      color: var(--text);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.75rem 1rem;
+    }
+
+    .topics-list li::before {
+      content: "✓";
+      color: var(--blue);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ===== WHO ===== */
+    .who-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      margin-top: 1.75rem;
+      list-style: none;
+    }
+
+    .who-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .who-pill {
+      display: inline-block;
+      background: var(--blue-light);
+      color: var(--blue);
+      border-radius: 999px;
+      padding: 0.2rem 0.7rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    /* ===== DOWNLOAD SECTION ===== */
+    .download-box {
+      background: var(--blue);
+      border-radius: 16px;
+      padding: 3rem 2rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    .download-box h2 { color: #fff; }
+    .download-box p  { color: rgba(255,255,255,0.8); max-width: 500px; margin: 0 auto; }
+
+    .download-box .btn-group { justify-content: center; }
+
+    .btn-white {
+      background: #fff;
+      color: var(--blue);
+      font-weight: 700;
+    }
+    .btn-white:hover {
+      background: #f0f7ff;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline-white {
+      background: transparent;
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.6);
+      font-weight: 600;
+    }
+    .btn-outline-white:hover {
+      border-color: #fff;
+      background: rgba(255,255,255,0.1);
+      transform: translateY(-1px);
+    }
+
+    /* ===== FAQ ===== */
+    .faq-list {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      background: var(--bg);
+      border: none;
+      padding: 1rem 1.25rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+      transition: background 0.15s;
+    }
+    .faq-question:hover { background: var(--bg-alt); }
+
+    .faq-chevron {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      transition: transform 0.25s;
+      color: var(--blue);
+    }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      padding: 0 1.25rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      padding: 0.25rem 1.25rem 1rem;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 0.25rem;
+    }
+
+    footer a { color: var(--blue); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 640px) {
+      nav { display: none; }
+      .hamburger { display: flex; }
+
+      .hero { padding: 3.5rem 0 3rem; }
+
+      .section { padding: 3rem 0; }
+
+      .download-box { padding: 2.25rem 1.25rem; }
+
+      .btn { width: 100%; justify-content: center; }
+      .btn-group { flex-direction: column; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="Python Handwritten Notes Home">
+        <div class="logo-icon" aria-hidden="true">🐍</div>
+        Python Handwritten Notes
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <a href="#why">Why These Notes</a>
+        <a href="#what">What's Included</a>
+        <a href="#download">PDF</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="#why"      onclick="closeMobileNav()">Why These Notes</a>
+      <a href="#what"     onclick="closeMobileNav()">What's Included</a>
+      <a href="#download" onclick="closeMobileNav()">PDF</a>
+      <a href="#faq"      onclick="closeMobileNav()">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<main>
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-badge" aria-label="Free download available">
+      📄 Free PDF Download
+    </div>
+
+    <h1>
+      Python Handwritten Notes <span>PDF</span>
+    </h1>
+
+    <p>
+      Clear, well-organized handwritten notes covering core Python concepts —
+      from fundamentals to practical examples. Perfect for beginners, college
+      students, exam revision, viva preparation, and Python interview prep.
+    </p>
+
+    <div class="btn-group">
+      <a href="handwritten_notes.pdf"
+         download
+         class="btn btn-primary"
+         aria-label="Download Python handwritten notes PDF">
+        ⬇ Download Python Notes PDF
+      </a>
+      <a href="handwritten_notes.pdf"
+         target="_blank"
+         rel="noopener"
+         class="btn btn-outline"
+         aria-label="Open Python handwritten notes PDF in browser">
+        👁 Open Notes
+      </a>
+    </div>
+
+    <!-- CSS Notebook Visual -->
+    <div class="notebook-visual" aria-hidden="true" role="presentation">
+      <div class="nb-header">
+        <div class="nb-dot"></div>
+        <div class="nb-dot"></div>
+        <div class="nb-dot"></div>
+        <span class="nb-title">python_notes.py — Handwritten Notes</span>
+      </div>
+      <div class="nb-body">
+        <span class="nb-line"><span class="nb-cm"># Python Handwritten Notes</span></span>
+        <span class="nb-line">&nbsp;</span>
+        <span class="nb-line"><span class="nb-kw">print</span>(<span class="nb-str">"Hello, Python!"</span>)</span>
+        <span class="nb-line">&nbsp;</span>
+        <span class="nb-line"><span class="nb-cm"># Variables &amp; Data Types</span></span>
+        <span class="nb-line"><span class="nb-fn">name</span> = <span class="nb-str">"Python"</span></span>
+        <span class="nb-line"><span class="nb-fn">version</span> = <span class="nb-str">3.12</span></span>
+        <span class="nb-line">&nbsp;</span>
+        <span class="nb-line"><span class="nb-cm"># Functions</span></span>
+        <span class="nb-line"><span class="nb-kw">def</span> <span class="nb-fn">greet</span>(name):</span>
+        <span class="nb-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="nb-kw">return</span> <span class="nb-str">f"Hello, {name}!"</span></span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== WHY THESE NOTES ===== -->
+<section class="section section-alt" id="why">
+  <div class="container">
+    <p class="section-label">Why These Notes</p>
+    <h2>Why Python Handwritten Notes Are So Useful</h2>
+    <p>
+      Handwritten notes strike a balance between depth and simplicity that
+      textbooks often miss. These Python notes are written to help you
+      understand concepts quickly — not just memorize syntax.
+    </p>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="why-icon">⚡</div>
+        <h3>Quick Revision</h3>
+        <p>Topic-wise organization makes it easy to revise the right concept before an exam or viva — no need to search through a full textbook.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">🎓</div>
+        <h3>Beginner-Friendly</h3>
+        <p>They use plain language and clear examples. If you are new to Python, these notes give you a solid starting point without too much jargon.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">🏫</div>
+        <h3>Useful for College Students</h3>
+        <p>Aligned with typical college Python syllabi, these notes cover what matters whether you're studying for exams or practicals.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">🎤</div>
+        <h3>Viva Preparation</h3>
+        <p>Concise definitions and clear concept explanations help you prepare confident answers for Python viva questions.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">💼</div>
+        <h3>Interview Preparation</h3>
+        <p>Key Python concepts and definitions are explained clearly — exactly what interviewers test in technical screening rounds.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">📴</div>
+        <h3>Offline Access</h3>
+        <p>Download the <a href="handwritten_notes.pdf">PDF</a> once and study anywhere — no internet connection required. Great for study sessions on the go.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHAT YOU GET ===== -->
+<section class="section" id="what">
+  <div class="container">
+    <p class="section-label">What's Included</p>
+    <h2>What These Python Notes Cover</h2>
+    <p>
+      The handwritten notes cover the core Python topics that beginners
+tte">PDF</a>:
+    </p>
+      and college students need. Here's what you get in the <a href="python-handwri
+    <ul class="topics-list">
+      <li>Introduction to Python &amp; Features</li>
+      <li>Variables &amp; Data Types</li>
+      <li>Operators &amp; Expressions</li>
+      <li>Control Flow — if, elif, else</li>
+      <li>Loops — for &amp; while loops</li>
+      <li>Functions &amp; Scope</li>
+      <li>Strings &amp; String Methods</li>
+      <li>Lists, Tuples &amp; Sets</li>
+      <li>Dictionaries</li>
+      <li>File Handling</li>
+      <li>Exception Handling</li>
+      <li>Object-Oriented Programming (OOP)</li>
+      <li>Modules &amp; Libraries</li>
+      <li>Important Definitions</li>
+      <li>Practical Programming Examples</li>
+      <li>Exam &amp; Viva-Ready Concepts</li>
+    </ul>
+
+    <p style="margin-top:1.25rem;">
+      <em>Note: The <a href="handwritten_notes.pdf">PDF</a> contains the actual handwritten notes. Topics listed reflect the
+      typical scope of these notes — download the <a href="handwritten_notes.pdf">PDF</a> to see the complete content.</em>
+    </p>
+  </div>
+</section>
+
+<!-- ===== WHO IS IT FOR ===== -->
+<section class="section section-alt" id="who">
+  <div class="container">
+    <p class="section-label">Who Can Use These Notes</p>
+    <h2>Who Are These Python Notes For?</h2>
+    <p>
+      These notes are for anyone who wants to learn or revise Python without
+      spending hours in a heavy textbook.
+    </p>
+
+    <ul class="who-list">
+      <li>
+        <span class="who-pill">Beginners</span>
+        Students who are just starting out with Python programming
+      </li>
+      <li>
+        <span class="who-pill">College Students</span>
+        Students with Python in their BCA, BSc, BTech or MCA syllabus
+      </li>
+      <li>
+        <span class="who-pill">Exam Prep</span>
+        Students preparing for semester exams and practical examinations
+      </li>
+      <li>
+        <span class="who-pill">Viva Prep</span>
+        Students who need quick, clear answers ready for Python viva
+      </li>
+      <li>
+        <span class="who-pill">Interview Prep</span>
+        Freshers preparing for Python technical interview questions
+      </li>
+      <li>
+        <span class="who-pill">Quick Revision</span>
+        Anyone who wants to revise Python concepts fast before a test
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== PDF DOWNLOAD SECTION ===== -->
+<section class="section" id="download">
+  <div class="container">
+    <div class="download-box">
+      <h2>Download Python Handwritten Notes PDF</h2>
+      <p style="margin-top:0.5rem;">
+        The complete handwritten notes are available as a free PDF.
+        Download once and study offline at your own pace — no login and no
+        subscription required.
+      </p>
+
+      <div class="btn-group">
+        <a href="handwritten_notes.pdf"
+           download
+           class="btn btn-white"
+           aria-label="Download Python handwritten notes PDF for free">
+          ⬇ Download PDF
+        </a>
+        <a href="handwritten_notes.pdf"
+           target="_blank"
+           rel="noopener"
+           class="btn btn-outline-white"
+           aria-label="Open Python handwritten notes PDF in a new tab">
+          👁 Open PDF
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section section-alt" id="faq">
+  <div class="container">
+    <p class="section-label">FAQ</p>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What are Python handwritten notes?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2.5"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          Python handwritten notes are manually written study notes covering
+          essential Python concepts in a clear, organized format. Unlike
+          printed textbooks, they present information concisely so you can
+          understand and revise quickly.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Are these Python notes useful for beginners?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2.5"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          Yes. The notes are written with beginners in mind. Concepts are
+          explained step by step from the basics — variables, data types,
+          loops, functions — before moving into more advanced topics.
+          No prior programming experience is required.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Can I download the Python handwritten notes PDF for free?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2.5"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          Yes. The complete <a href="handwritten_notes.pdf">Python handwritten notes PDF</a> is free to download
+          directly from this page. Click the "Download PDF" button above —
+          no sign-up or payment required.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Are these notes useful for Python interview preparation?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2.5"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          Yes. The notes include clear definitions, concept explanations, and
+          practical examples — topics that commonly appear in Python technical
+          interviews. They are a good starting point for interview revision,
+          especially for fresher-level roles.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Are these notes useful for Python viva preparation?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2.5"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          Absolutely. Because the notes are handwritten and concise, they are
+          easy to read through quickly before a practical viva. The clear
+          definitions help you give confident, accurate answers.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Are these Python notes useful for exam revision?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2.5"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          Yes. The topic-wise structure makes them much faster to revise than
+          a full textbook. Many students use these notes in the days before
+          their semester exams to quickly review important Python concepts.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Can I use these notes offline?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2.5"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          Yes. Once you download the <a href="handwritten_notes.pdf">PDF</a>, it is saved to your device. You can
+          open and study it anytime without an internet connection — on your
+          phone, tablet, or laptop.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <p><strong>Python Handwritten Notes</strong></p>
+    <p>Free Python notes PDF for students, beginners, and interview candidates.</p>
+    <p style="margin-top:0.75rem;">
+      <a href="handwritten_notes.pdf" download>Download PDF</a>
+      &nbsp;·&nbsp;
+      <a href="handwritten_notes.pdf" target="_blank" rel="noopener">Open PDF</a>
+    </p>
+    <p style="margin-top:1rem; font-size:0.8rem;">
+      &copy; <span id="year"></span> Python Handwritten Notes. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+  // Current year in footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile nav toggle
+  const hamburger  = document.getElementById('hamburger');
+  const mobileNav  = document.getElementById('mobileNav');
+
+  hamburger.addEventListener('click', function () {
+    const isOpen = mobileNav.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', isOpen);
+  });
+
+  function closeMobileNav() {
+    mobileNav.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+  }
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const item    = btn.closest('.faq-item');
+      const isOpen  = item.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(function (el) {
+        el.classList.remove('open');
+        el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+
+      // Open clicked (if it was closed)
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
